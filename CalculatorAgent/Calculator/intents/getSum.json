@@ -10,21 +10,16 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "df52cead-7696-4d4d-9bd9-b00dc491caef",
+          "id": "1fe3aeda-a06c-4221-a8a0-68ce0430d8bf",
           "required": true,
           "dataType": "@sys.number",
-          "name": "firstNumber",
-          "value": "$firstNumber",
-          "prompts": [
-            {
-              "lang": "en",
-              "value": "Enter first number"
-            }
-          ],
-          "isList": false
+          "name": "numbers",
+          "value": "$numbers",
+          "prompts": [],
+          "isList": true
         },
         {
-          "id": "3a940a6f-2b2e-4cd8-baed-bfc948816b82",
+          "id": "cea1e829-1097-446f-900b-b5fac318818a",
           "required": true,
           "dataType": "@Addition",
           "name": "Addition",
@@ -36,27 +31,13 @@
             }
           ],
           "isList": false
-        },
-        {
-          "id": "d2bad096-bd13-495d-b253-b39b4629264c",
-          "required": true,
-          "dataType": "@sys.number",
-          "name": "secondNumber",
-          "value": "$secondNumber",
-          "prompts": [
-            {
-              "lang": "en",
-              "value": "Enter second number"
-            }
-          ],
-          "isList": false
         }
       ],
       "messages": [
         {
           "type": 0,
           "lang": "en",
-          "speech": []
+          "speech": "Not sure what you meant but I only accept simple math"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -66,7 +47,7 @@
   "priority": 500000,
   "webhookUsed": true,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1527579134,
+  "lastUpdate": 1527583270,
   "fallbackIntent": false,
   "events": []
 }

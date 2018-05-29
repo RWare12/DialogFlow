@@ -10,45 +10,24 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "b39ae728-885b-47fa-837c-d9f0c248c711",
+          "id": "e5acc930-4467-4b8e-b818-8f8564f376ea",
           "required": true,
           "dataType": "@sys.number",
-          "name": "firstNumber",
-          "value": "$firstNumber",
+          "name": "numbers",
+          "value": "$numbers",
           "prompts": [
             {
               "lang": "en",
-              "value": "Enter first number please"
+              "value": "Enter number please"
             }
           ],
-          "isList": false
+          "isList": true
         },
         {
-          "id": "8c78df2f-109d-46a2-84d3-7a8a1eeede61",
-          "required": true,
-          "dataType": "@sys.number",
-          "name": "secondNumber",
-          "value": "$secondNumber",
-          "prompts": [
-            {
-              "lang": "en",
-              "value": "Enter second number"
-            }
-          ],
-          "isList": false
-        },
-        {
-          "id": "60d5aac8-c09c-4ef9-b615-4a4ca862dfc9",
-          "required": true,
+          "id": "01152ad3-93df-4e68-b3fc-3fda26df72d4",
           "dataType": "@Subtraction",
           "name": "Subtraction",
           "value": "$Subtraction",
-          "prompts": [
-            {
-              "lang": "en",
-              "value": "Enter math operation please"
-            }
-          ],
           "isList": false
         }
       ],
@@ -56,7 +35,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": []
+          "speech": "Not sure what you meant but I only accept simple math"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -66,7 +45,7 @@
   "priority": 500000,
   "webhookUsed": true,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1527578131,
+  "lastUpdate": 1527584905,
   "fallbackIntent": false,
   "events": []
 }

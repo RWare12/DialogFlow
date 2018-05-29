@@ -55,7 +55,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": []
+          "speech": "Not sure what you meant but I only accept simple math"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -65,7 +65,7 @@
   "priority": 500000,
   "webhookUsed": true,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1527579272,
+  "lastUpdate": 1527583200,
   "fallbackIntent": false,
   "events": []
 }

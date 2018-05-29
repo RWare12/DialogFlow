@@ -1,48 +1,36 @@
 [
   {
-    "id": "80a469fb-dce4-4f1f-9215-4a0de592d097",
+    "id": "78b7ddce-d327-4bde-ac36-57d5067c5712",
     "data": [
       {
-        "text": "the ",
+        "text": "6",
+        "alias": "numbers",
+        "meta": "@sys.number",
         "userDefined": false
       },
       {
-        "text": "sum",
+        "text": "+",
         "alias": "Addition",
         "meta": "@Addition",
         "userDefined": false
       },
       {
-        "text": " of ",
-        "userDefined": false
-      },
-      {
-        "text": "12",
-        "alias": "firstNumber",
-        "meta": "@sys.number",
-        "userDefined": false
-      },
-      {
-        "text": " and ",
-        "userDefined": false
-      },
-      {
-        "text": "12",
-        "alias": "secondNumber",
+        "text": "4",
+        "alias": "numbers",
         "meta": "@sys.number",
         "userDefined": false
       }
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 1527579134
+    "updated": 1527583270
   },
   {
-    "id": "98c01f79-097a-4051-bdb1-55a461ff455d",
+    "id": "79aea5f9-153a-45dd-8e91-de945ef0224e",
     "data": [
       {
         "text": "3",
-        "alias": "firstNumber",
+        "alias": "numbers",
         "meta": "@sys.number",
         "userDefined": false
       },
@@ -62,17 +50,125 @@
       },
       {
         "text": "6",
-        "alias": "secondNumber",
+        "alias": "numbers",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "7",
+        "alias": "numbers",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "6",
+        "alias": "numbers",
         "meta": "@sys.number",
         "userDefined": false
       }
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 1527579134
+    "updated": 1527581263
   },
   {
-    "id": "1bc7eef2-b971-4964-b797-618602334ce4",
+    "id": "9477ed1a-30c4-425f-b464-965af0357334",
+    "data": [
+      {
+        "text": "sum",
+        "alias": "Addition",
+        "meta": "@Addition",
+        "userDefined": false
+      },
+      {
+        "text": " of ",
+        "userDefined": false
+      },
+      {
+        "text": "2",
+        "alias": "numbers",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": ",",
+        "userDefined": false
+      },
+      {
+        "text": "6",
+        "alias": "numbers",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": ",",
+        "userDefined": false
+      },
+      {
+        "text": "78",
+        "alias": "numbers",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": " and ",
+        "userDefined": false
+      },
+      {
+        "text": "5",
+        "alias": "numbers",
+        "meta": "@sys.number",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527581263
+  },
+  {
+    "id": "83a86dba-21ed-4c11-94df-a847e2a1f229",
+    "data": [
+      {
+        "text": "sum",
+        "alias": "Addition",
+        "meta": "@Addition",
+        "userDefined": false
+      },
+      {
+        "text": " of ",
+        "userDefined": false
+      },
+      {
+        "text": "2",
+        "alias": "numbers",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": " and ",
+        "userDefined": false
+      },
+      {
+        "text": "3",
+        "alias": "numbers",
+        "meta": "@sys.number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527581263
+  },
+  {
+    "id": "0999474c-e2a9-4e05-802c-9785fa627248",
     "data": [
       {
         "text": "add",
@@ -85,32 +181,52 @@
         "userDefined": false
       },
       {
-        "text": "1",
-        "alias": "firstNumber",
-        "meta": "@sys.number",
-        "userDefined": false
-      },
-      {
-        "text": " to ",
-        "userDefined": false
-      },
-      {
         "text": "2",
-        "alias": "secondNumber",
+        "alias": "numbers",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "3",
+        "alias": "numbers",
+        "meta": "@sys.number",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "5",
+        "alias": "numbers",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": " and ",
+        "userDefined": false
+      },
+      {
+        "text": "6",
+        "alias": "numbers",
         "meta": "@sys.number",
         "userDefined": false
       }
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 1527579134
+    "updated": 1527581263
   },
   {
-    "id": "0d134db5-f709-492c-871d-596b3ef29f88",
+    "id": "ef4b95e3-7c78-4422-bfd3-45eade95ccde",
     "data": [
       {
         "text": "1",
-        "alias": "firstNumber",
+        "alias": "numbers",
         "meta": "@sys.number",
         "userDefined": false
       },
@@ -130,39 +246,39 @@
       },
       {
         "text": "1",
-        "alias": "secondNumber",
+        "alias": "numbers",
         "meta": "@sys.number",
-        "userDefined": false
+        "userDefined": true
       }
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 1527579134
+    "updated": 1527581263
   },
   {
-    "id": "dfdd714b-68c8-4256-bfd5-ad097365891d",
+    "id": "818e8b1f-1107-4b6d-adc6-d836ad45aefb",
     "data": [
       {
         "text": "1",
-        "alias": "firstNumber",
+        "alias": "numbers",
         "meta": "@sys.number",
-        "userDefined": false
+        "userDefined": true
       },
       {
         "text": "+",
         "alias": "Addition",
         "meta": "@Addition",
-        "userDefined": false
+        "userDefined": true
       },
       {
         "text": "1",
-        "alias": "secondNumber",
+        "alias": "numbers",
         "meta": "@sys.number",
-        "userDefined": false
+        "userDefined": true
       }
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 1527579134
+    "updated": 1527581263
   }
 ]

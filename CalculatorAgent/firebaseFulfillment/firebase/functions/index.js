@@ -25,6 +25,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
 //changed paramater names
 let firstNumberTemp = agent.parameters.firstNumber;
 let secondNumberTemp = agent.parameters.secondNumber;
+let numList = agent.parameters.numbers;
 let result;
 
 function calcResult(agent){
@@ -36,22 +37,37 @@ function calcResult(agent){
     
     if (add === `Addition`){
          
-        result = firstNumberTemp + secondNumberTemp;
+        let ctr = 0;
+        result = 0;
+        while (ctr < numList.length){
+            result += numList[ctr];
+            ctr++;
+        }
         
     }else if (subtract === `Subtraction`){
         
-        result = firstNumberTemp - secondNumberTemp;
+        let ctr = 1;
+        result = numList[0];
+        while (ctr < numList.length){
+            result -= numList[ctr];
+            ctr++;
+        }
         
     }else if (multiply === `Multiplication`){
         
-        result = firstNumberTemp * secondNumberTemp;
+        let ctr = 0;
+        result = 1;
+        while (ctr < numList.length){
+            result *= numList[ctr];
+            ctr++;
+        }
         
     }else if (divide === `Quotient`){
-        
+        result = 0;
         result = firstNumberTemp / secondNumberTemp;
     }
     
-    agent.add(`And this is what we get ${result}`);
+    agent.add(`And this is what we get, ${result}.`);
 }
 
   // // Uncomment and edit to make your own intent handler
