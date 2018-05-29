@@ -1,0 +1,84 @@
+{
+  "id": "e9fe2a55-2a09-4791-8a6c-6a3ae3b536ec",
+  "name": "getNumbers",
+  "auto": true,
+  "contexts": [
+    "calculate"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "result",
+          "parameters": {},
+          "lifespan": 1
+        },
+        {
+          "name": "calculate",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "7cec31e2-dca4-422b-9db7-9c396a6fbf3e",
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "number",
+          "value": "$number",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What is your first number?"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "5ae1930f-edc6-4741-87ca-4871aef49bd5",
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "number1",
+          "value": "$number1",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What\u0027s your second number? :)"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "3afa3d54-04ce-4be7-8f8d-3585f9b9faf2",
+          "required": true,
+          "dataType": "@operations",
+          "name": "operations",
+          "value": "$operations",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What\u0027s your math operation in your mind? :D"
+            }
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1527153428,
+  "fallbackIntent": false,
+  "events": []
+}
