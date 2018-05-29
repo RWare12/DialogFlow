@@ -10,35 +10,21 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "bc09c6e4-6bcb-4a5d-a918-73ab3162c6cb",
+          "id": "df52cead-7696-4d4d-9bd9-b00dc491caef",
           "required": true,
           "dataType": "@sys.number",
-          "name": "number",
-          "value": "$number",
+          "name": "firstNumber",
+          "value": "$firstNumber",
           "prompts": [
             {
               "lang": "en",
-              "value": "Enter a number"
+              "value": "Enter first number"
             }
           ],
           "isList": false
         },
         {
-          "id": "8b636911-89c4-44e1-a7d3-511a9aac6870",
-          "required": true,
-          "dataType": "@sys.number",
-          "name": "number1",
-          "value": "$number1",
-          "prompts": [
-            {
-              "lang": "en",
-              "value": "Enter the second number"
-            }
-          ],
-          "isList": false
-        },
-        {
-          "id": "c68e75e6-126a-4afc-a25e-fb3600127a51",
+          "id": "3a940a6f-2b2e-4cd8-baed-bfc948816b82",
           "required": true,
           "dataType": "@Addition",
           "name": "Addition",
@@ -46,7 +32,21 @@
           "prompts": [
             {
               "lang": "en",
-              "value": "Please enter a math operation"
+              "value": "Enter math operation"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "d2bad096-bd13-495d-b253-b39b4629264c",
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "secondNumber",
+          "value": "$secondNumber",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Enter second number"
             }
           ],
           "isList": false
@@ -66,7 +66,7 @@
   "priority": 500000,
   "webhookUsed": true,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1527575382,
+  "lastUpdate": 1527579134,
   "fallbackIntent": false,
   "events": []
 }

@@ -22,8 +22,9 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     agent.add(`I'm sorry, can you try again?`);
 }
 
-let firstNumberTemp = agent.parameters.number;
-let secondNumberTemp = agent.parameters.number1;
+//changed paramater names
+let firstNumberTemp = agent.parameters.firstNumber;
+let secondNumberTemp = agent.parameters.secondNumber;
 let result;
 
 function calcResult(agent){

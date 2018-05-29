@@ -10,27 +10,45 @@
       "parameters": [
         {
           "id": "124fd46b-1fd7-4991-8531-5a90016b32ed",
-          "required": false,
+          "required": true,
           "dataType": "@sys.number",
-          "name": "number",
-          "value": "$number",
+          "name": "firstNumber",
+          "value": "$firstNumber",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Enter First number"
+            }
+          ],
           "isList": false
         },
         {
           "id": "4ff906ac-1be9-4f0f-8c47-cef389cdbd48",
-          "required": false,
+          "required": true,
           "dataType": "@Division",
           "name": "Division",
           "value": "$Division",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Enter math operation"
+            }
+          ],
           "isList": false
         },
         {
           "id": "96e5de43-0a77-4699-a9c9-d65c6218a609",
-          "required": false,
+          "required": true,
           "dataType": "@sys.number",
-          "name": "number1",
-          "value": "$number1",
-          "isList": false
+          "name": "secondNumber",
+          "value": "$secondNumber",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Enter second number"
+            }
+          ],
+          "isList": true
         }
       ],
       "messages": [
@@ -47,7 +65,7 @@
   "priority": 500000,
   "webhookUsed": true,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1527577678,
+  "lastUpdate": 1527579272,
   "fallbackIntent": false,
   "events": []
 }

@@ -12,8 +12,8 @@
           "id": "ea63c16b-7258-4371-b90a-db0a6362dc63",
           "required": true,
           "dataType": "@sys.number",
-          "name": "number",
-          "value": "$number",
+          "name": "firstNumber",
+          "value": "$firstNumber",
           "prompts": [
             {
               "lang": "en",
@@ -40,8 +40,8 @@
           "id": "d2c53802-bd08-491f-8ff7-57b2c8187642",
           "required": true,
           "dataType": "@sys.number",
-          "name": "number1",
-          "value": "$number1",
+          "name": "secondNumber",
+          "value": "$secondNumber",
           "prompts": [
             {
               "lang": "en",
@@ -65,7 +65,7 @@
   "priority": 500000,
   "webhookUsed": true,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1527576791,
+  "lastUpdate": 1527578110,
   "fallbackIntent": false,
   "events": []
 }
