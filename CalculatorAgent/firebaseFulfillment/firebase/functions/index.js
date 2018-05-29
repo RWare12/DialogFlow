@@ -22,36 +22,36 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     agent.add(`I'm sorry, can you try again?`);
 }
 
+let firstNumberTemp = agent.parameters.number;
+let secondNumberTemp = agent.parameters.number1;
+let result;
 
-
-  function calcResult(agent){
-      
-      let firstNumber = agent.parameters.number;
-      let secondNumber = agent.parameters.number1;
-      let operations = agent.parameters.operations;
-      
-      let result;
-      
-      if (operations === `Addition`){
+function calcResult(agent){
+    
+    let add = agent.parameters.Addition;
+    let subtract = agent.parameters.Subtraction;
+    let multiply = agent.parameters.Multiplication;
+    let divide = agent.parameters.Division;
+    
+    if (add === `Addition`){
          
-          result = firstNumber + secondNumber;
-          
-      }else if (operations === `Subtraction`){
-          
-          result = firstNumber - secondNumber;
-          
-      }else if (operations === `Multiplication`){
-          
-          result = firstNumber * secondNumber;
-          
-      }else if (operations === `Division`){
-          
-          result = firstNumber / secondNumber;
-          
-      }
-      agent.add(`And this is what we get ${result}`);
-      
-  }
+        result = firstNumberTemp + secondNumberTemp;
+        
+    }else if (subtract === `Subtraction`){
+        
+        result = firstNumberTemp - secondNumberTemp;
+        
+    }else if (multiply === `Multiplication`){
+        
+        result = firstNumberTemp * secondNumberTemp;
+        
+    }else if (divide === `Quotient`){
+        
+        result = firstNumberTemp / secondNumberTemp;
+    }
+    
+    agent.add(`And this is what we get ${result}`);
+}
 
   // // Uncomment and edit to make your own intent handler
   // // uncomment `intentMap.set('your intent name here', yourFunctionHandler);`
@@ -86,7 +86,10 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
   intentMap.set('Default Fallback Intent', fallback);
-  intentMap.set('getNumbers', calcResult);
+  intentMap.set('getDifference', calcResult);
+  intentMap.set('getSum', calcResult);
+  intentMap.set('getProduct', calcResult);
+  intentMap.set('getQuotient', calcResult);
   // intentMap.set('your intent name here', googleAssistantHandler);
   agent.handleRequest(intentMap);
 });

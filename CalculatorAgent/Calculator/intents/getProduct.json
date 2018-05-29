@@ -1,0 +1,71 @@
+{
+  "id": "88382899-7163-48fd-abfd-164dbab5a339",
+  "name": "getProduct",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "ea63c16b-7258-4371-b90a-db0a6362dc63",
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "number",
+          "value": "$number",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Enter first number"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "5659e5ed-a680-4297-9244-bb25141b4c98",
+          "required": true,
+          "dataType": "@Multiplication",
+          "name": "Multiplication",
+          "value": "$Multiplication",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Enter math operation"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "d2c53802-bd08-491f-8ff7-57b2c8187642",
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "number1",
+          "value": "$number1",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Enter second number"
+            }
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "Not sure what you meant but I only accept 2 numbers"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1527576791,
+  "fallbackIntent": false,
+  "events": []
+}

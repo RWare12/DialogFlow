@@ -1,0 +1,134 @@
+[
+  {
+    "id": "cdb61a8a-4be1-458f-9e07-dee5910c263f",
+    "data": [
+      {
+        "text": "subtract",
+        "alias": "Subtraction",
+        "meta": "@Subtraction",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "2",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "1",
+        "alias": "number1",
+        "meta": "@sys.number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527575028
+  },
+  {
+    "id": "1a7a2b46-b7d2-45ea-b438-c5e87e71a5ff",
+    "data": [
+      {
+        "text": "6",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "minus",
+        "alias": "Subtraction",
+        "meta": "@Subtraction",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "8",
+        "alias": "number1",
+        "meta": "@sys.number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527575028
+  },
+  {
+    "id": "9358672c-773a-430e-8349-b9f277acf091",
+    "data": [
+      {
+        "text": "the ",
+        "userDefined": false
+      },
+      {
+        "text": "difference",
+        "alias": "Subtraction",
+        "meta": "@Subtraction",
+        "userDefined": false
+      },
+      {
+        "text": " of ",
+        "userDefined": false
+      },
+      {
+        "text": "2",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": " and ",
+        "userDefined": false
+      },
+      {
+        "text": "3",
+        "alias": "number1",
+        "meta": "@sys.number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527575028
+  },
+  {
+    "id": "ffeb78b7-3537-4127-9687-d0a1c0fda0ae",
+    "data": [
+      {
+        "text": "1",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": "-",
+        "alias": "Subtraction",
+        "meta": "@Subtraction",
+        "userDefined": false
+      },
+      {
+        "text": "1",
+        "alias": "number1",
+        "meta": "@sys.number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527575028
+  }
+]

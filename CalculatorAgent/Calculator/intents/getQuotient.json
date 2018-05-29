@@ -1,0 +1,53 @@
+{
+  "id": "a8a8e4f1-59da-4dd2-b737-fc8aa344f0f0",
+  "name": "getQuotient",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "124fd46b-1fd7-4991-8531-5a90016b32ed",
+          "required": false,
+          "dataType": "@sys.number",
+          "name": "number",
+          "value": "$number",
+          "isList": false
+        },
+        {
+          "id": "4ff906ac-1be9-4f0f-8c47-cef389cdbd48",
+          "required": false,
+          "dataType": "@Division",
+          "name": "Division",
+          "value": "$Division",
+          "isList": false
+        },
+        {
+          "id": "96e5de43-0a77-4699-a9c9-d65c6218a609",
+          "required": false,
+          "dataType": "@sys.number",
+          "name": "number1",
+          "value": "$number1",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1527577678,
+  "fallbackIntent": false,
+  "events": []
+}

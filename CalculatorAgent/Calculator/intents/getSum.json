@@ -1,0 +1,72 @@
+{
+  "id": "650ecb8d-118c-4517-a11c-812bde481127",
+  "name": "getSum",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Add",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "bc09c6e4-6bcb-4a5d-a918-73ab3162c6cb",
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "number",
+          "value": "$number",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Enter a number"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "8b636911-89c4-44e1-a7d3-511a9aac6870",
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "number1",
+          "value": "$number1",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Enter the second number"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "c68e75e6-126a-4afc-a25e-fb3600127a51",
+          "required": true,
+          "dataType": "@Addition",
+          "name": "Addition",
+          "value": "$Addition",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please enter a math operation"
+            }
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1527575382,
+  "fallbackIntent": false,
+  "events": []
+}
