@@ -18,8 +18,11 @@ exports.webhook = functions.https.onRequest((request, response) => {
     let add = query.Addition;
     let subtract = query.Subtraction;
     let multiply = query.Multiplication;
-    let divide = query.Quotient;
+    let divide = query.Division;
+
     let numList = query.numbers;
+    let firstNumberTemp = query.firstNumber;
+    let secondNumberTemp = query.secondNumber;
 
     if (add === `Addition`){
             
