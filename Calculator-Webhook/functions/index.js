@@ -73,7 +73,7 @@ exports.webhook = functions.https.onRequest((request, response) => {
 
         response.send({
             fulfillmentText:
-                `and this is what we got, ${result}.`
+                `something went wrong`
         });
 
     }))
