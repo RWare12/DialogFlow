@@ -1,4 +1,8 @@
 const functions = require('firebase-functions');
+const admin = require('firebase-admin');
+
+admin.initializeApp(functions.config().firebase);
+let firestore = admin.firestore();
 
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions
@@ -49,11 +53,32 @@ exports.webhook = functions.https.onRequest((request, response) => {
         result = firstNumberTemp / secondNumberTemp;
     }
 
-    response.send({
 
-        fulfillmentText:
-            `and this is what we gotasdjadsjksadada, ${result}.`
-    });
+
+    let bodyData = request.body;
+    firestore.collection('rawData')
+        .add(bodyData)
+        .then(() => {
+
+            response.send({
+                fulfillmentText:
+                    `and this is what we got, ${result}.`
+            });
+
+        
+    })
+    .catch((e => {
+
+        console.log("error: ", e);
+
+        response.send({
+            fulfillmentText:
+                `and this is what we got, ${result}.`
+        });
+
+    }))
+
+  
 
 
 });
