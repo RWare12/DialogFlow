@@ -30,13 +30,6 @@ exports.webhook = functions.https.onRequest((request, response) => {
 
     console.log("request.body.queryResult: ", request.body.queryResult);
 
-    request('http://www.google.com', function (error, response, body) {
-        console.log('error:', error); // Print the error if one occurred
-        console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
-        console.log('body:', body); // Print the HTML for the Google homepage.
-    });
-    
-
 
     /*let query = request.body.queryResult.parameters;
     let numList = query.numbers;
@@ -242,12 +235,12 @@ exports.insertIntoDB = functions.https.onRequest((request, response) => {
     })
 });
 
-exports.convertToUppercase = functions.database.ref('/test/{pushID}/text').onWrite(event => {
+exports.convertToUppercase = functions.database.ref('/test/{pushID}/text').onWrite((change, context) => {
 
     console.log('UpperCase function triggered');
-    const text = event.data.val();
+    const text = change.after.val();
     console.log('text values: ', text);
-    const uppercaseText = text;
-    return event.data.ref.parent.child('uppercaseText').set(uppercaseText);
+    const uppercaseText = text.toUpperCase();
+    return change.after.ref.parent.child('uppercaseText').set(uppercaseText);
 
 });
