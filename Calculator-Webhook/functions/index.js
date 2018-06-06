@@ -1,37 +1,21 @@
 
 let firebase = require("firebase");
-let request = require('request');
-
+let test = require('./test.js');
+const login = require("facebook-chat-api");
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 
 admin.initializeApp(functions.config().firebase);
-// let firestore = admin.firestore();
-
-
-// // Create and Deploy Your First Cloud Functions
 
  // Initialize Firebase
-  let config = {
-    apiKey: "AIzaSyBcEalVGXZLsZqqgWcVSLNuqIzQk71y21U",
-    authDomain: "calculator-a3477.firebaseapp.com",
-    databaseURL: "https://calculator-a3477.firebaseio.com",
-    projectId: "calculator-a3477",
-    storageBucket: "calculator-a3477.appspot.com",
-    messagingSenderId: "1042922692923"
-  };
-  firebase.initializeApp(config);
+ // ...
 
-
-// // https://firebase.google.com/docs/functions/write-firebase-functions
-//
+ 
 exports.webhook = functions.https.onRequest((request, response) => {
-
 
     console.log("request.body.queryResult: ", request.body.queryResult);
 
-
-    /*let query = request.body.queryResult.parameters;
+    let query = request.body.queryResult.parameters;
     let numList = query.numbers;
     let uid = firebase.database().ref().child('convo').push().key;
 
@@ -188,41 +172,7 @@ exports.webhook = functions.https.onRequest((request, response) => {
             
             break;
 
-        case 'showInfo':
-            // firestore.collection('rawData').get()
-            //     .then((querySnapShot) => {
-
-            //         let showInfoFB = [];
-            //         querySnapShot.forEach((doc) => { doc.push(doc.data()) });
-
-            //         let fulfillmentText = `you have ${showInfoFB.length} data \n`;
-
-
-            //         showInfoFB.forEach((eachInfo, index) => {
-
-            //             fulfillmentText += `index: ${index}, numList: ${eachInfo.numbers}`
-            //         })
-
-            //         response.send({
-
-            //                 fulfillmentText: fulfillmentText
-            //         })
-
-            //     })
-            //     .catch((err) => {
-
-            //         console.log('An error has occured: ' , err);
-
-            //         response.send({
-
-            //             fulfillmentText: `something went wrong reading database`
-            //         })
-
-            //     })
-
-            break;
-
-    }*/
+    }
 
 });
 
@@ -233,14 +183,32 @@ exports.insertIntoDB = functions.https.onRequest((request, response) => {
         response.redirect(303, snapshot.ref);
 
     })
+
 });
 
 exports.convertToUppercase = functions.database.ref('/test/{pushID}/text').onWrite((change, context) => {
 
-    console.log('UpperCase function triggered');
+    console.log('request function triggered');
     const text = change.after.val();
+    test();//module from test.js
     console.log('text values: ', text);
     const uppercaseText = text.toUpperCase();
     return change.after.ref.parent.child('uppercaseText').set(uppercaseText);
 
+    //broadcastMessage(text);
+
+
+
 });
+
+function broadcastMessage(message){
+
+    let FBMessenger = require('fb-messenger');
+    let messenger = new FBMessenger("EAAFQIPkB2ZCYBAGtSIppR978xPAgktw85w29nZC7xvX9UW599iebSjV0bmCN6JIz4GkVyQ8Hqnn5snqnvzgdiB6zgAR6ylciDQYAVvVrz3S3R4CMe1l1fKFiXcXExf0K169dC0DI3qVvl88lOVz6imaXoE3UrSyB4yxVxf3gZDZD");
+ 
+    messenger.sendTextMessage("1721885347926612", 'Hello', function (err, body) {
+        if(err) return console.error(err)
+        console.log(body);
+    })
+
+}
